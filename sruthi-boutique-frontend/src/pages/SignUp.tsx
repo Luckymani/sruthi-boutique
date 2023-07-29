@@ -189,26 +189,17 @@ const SignUp = () => {
                 <div className="border-t-2 border-gray-200 bg-gray-50 px-4 py-6 sm:px-10">
                   <p className="text-xs leading-5 text-gray-500">
                     By Signing up, you agree to our{" "}
-                    <a
-                      href="#"
-                      className="font-medium text-gray-900 hover:underline"
-                    >
+                    <div className="font-medium text-gray-900 hover:underline">
                       Terms
-                    </a>
+                    </div>
                     ,{" "}
-                    <a
-                      href="#"
-                      className="font-medium text-gray-900 hover:underline"
-                    >
+                    <div className="font-medium text-gray-900 hover:underline">
                       Data Policy
-                    </a>{" "}
+                    </div>{" "}
                     and{" "}
-                    <a
-                      href="#"
-                      className="font-medium text-gray-900 hover:underline"
-                    >
+                    <div className="font-medium text-gray-900 hover:underline">
                       Cookies Policy
-                    </a>
+                    </div>
                     .
                   </p>
                 </div>
