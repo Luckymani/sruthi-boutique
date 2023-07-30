@@ -7,7 +7,9 @@
 // Import necessary modules from React and react-router-dom
 import { createBrowserRouter } from "react-router-dom";
 // Import Pages
-import { Home, SignIn, SignUp } from "../pages/index";
+import Home from "../pages/Home.js";
+import SignIn from "../components/LoginRegistration/LoginPage.jsx";
+import SignUp from "../components/LoginRegistration/RegistrationPage.jsx";
 import Cart from "../pages/Cart";
 import ItemsDetail from "../pages/ItemsDetail";
 import Layout from "./Layout";

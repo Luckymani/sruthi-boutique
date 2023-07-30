@@ -3,7 +3,7 @@ const { signup, login, authVerify } = require("../Controller/auth");
 
 const router = Router();
 
-router.post("/signup", signup);
+router.post("/register", signup);
 router.post("/login", login);
 router.post("/authVerify", authVerify);
 
