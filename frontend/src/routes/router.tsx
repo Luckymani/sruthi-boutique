@@ -12,30 +12,37 @@ import SignIn from "../components/LoginRegistration/LoginPage.jsx";
 import SignUp from "../components/LoginRegistration/RegistrationPage.jsx";
 import Cart from "../pages/Cart";
 import ItemsDetail from "../pages/ItemsDetail";
+import Layout from "./Layout";
 
 // Define the router configuration using createBrowserRouter
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Home />, // Render the SignUp component when the path is "/signup"
-	},
-	{
-		path: "/signIn",
-		element: <SignIn />, // Render the SignIn component when the path is "/signin"
-		index: true,
-	},
-	{
-		path: "/signUp",
-		element: <SignUp />, // Render the SignUp component when the path is "/signup"
-	},
-	{
-		path: "/cart",
-		element: <Cart />,
-	},
-	{
-		path: "/itemsDetail",
-		element: <ItemsDetail />,
-	},
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
+  },
+  {
+    path: "/signIn",
+    element: <SignIn />, // Render the SignIn component when the path is "/signin"
+    index: true,
+  },
+  {
+    path: "/signUp",
+    element: <SignUp />, // Render the SignUp component when the path is "/signup"
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+  {
+    path: "/itemsDetail",
+    element: <ItemsDetail />,
+  },
 ]);
 
 export default router;
