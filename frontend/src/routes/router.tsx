@@ -10,12 +10,19 @@ import { createBrowserRouter } from "react-router-dom";
 import { Home, SignIn, SignUp } from "../pages/index";
 import Cart from "../pages/Cart";
 import ItemsDetail from "../pages/ItemsDetail";
+import Layout from "./Layout";
 
 // Define the router configuration using createBrowserRouter
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />, // Render the SignUp component when the path is "/signup"
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
   },
   {
     path: "/signIn",

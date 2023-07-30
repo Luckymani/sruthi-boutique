@@ -1,4 +1,4 @@
-import { Category, Cta, Favorites, Footer, Hero } from "../components";
+import { Category, Cta, Favorites, Hero } from "../components";
 
 export default function Home() {
   return (
@@ -15,8 +15,6 @@ export default function Home() {
         <Favorites />
         {/* Call to action (CTA) section */}
         <Cta />
-        {/* Footer section */}
-        <Footer />
       </main>
     </div>
   );

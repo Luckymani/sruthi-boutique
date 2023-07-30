@@ -1,3 +1,4 @@
+export { default as Navbar } from "./Layout/Navbar.tsx";
 export { default as Footer } from "./Layout/Footer";
 export { default as Hero } from "./Home/Hero.tsx";
 export { default as Category } from "./Home/Category.tsx";
