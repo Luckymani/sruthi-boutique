@@ -6,6 +6,7 @@ export default {
       colors: {
         "primary-color": "#4f46e5",
         "primary-color-shade2": "#6366f1",
+        "order-sum-color": "#fffaff",
       },
     },
   },
